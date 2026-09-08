@@ -193,12 +193,21 @@
     		</div>
 
 			<div class="card">
-      			<span class="badge">-33%</span>
-      			<img src="img/Ofertas Top/acer nitro.webp" alt="Portatil Acer Nitro">
-      			<div class="nombre">Portátil Acer Nitro V 15 ANV15-52 15.6" Intel Core i9-13900H 32GB 1TB SSD RTX 5060 Sin Sistema Operativo</div>
-      			<div><span class="precio-actual">1.199€</span><span class="precio-anterior">1499€</span></div>
-      			<div class="valoracion">⭐ 4,4/5 · 1865 opiniones</div>
+      			<span class="badge">-39%</span>
+      			<img src="img/Ofertas Top/mesa.webp" alt="Mesa Elevable">
+      			<div class="nombre">Owlotech Manager Mesa de Escritorio Regulable en Altura con Motor 120x60cm Negra</div>
+      			<div><span class="precio-actual">139,98€</span><span class="precio-anterior">229,99€</span></div>
+      			<div class="valoracion">⭐ 4,6/5 · 101 opiniones</div>
       			<div class="envio">📦 Envío gratis. Entrega el miércoles, 9 de septiembre</div>
+    		</div>
+			
+			<div class="card">
+      			<span class="badge">-36%</span>
+      			<img src="img/Ofertas Top/freifora.jpg" alt="Freidora aire">
+      			<div class="nombre">Freidora de aire Cosori Dual Blaze Twinfry con revestimiento cerámico, 10L, 2800W, Doble cesta, Gris</div>
+      			<div><span class="precio-actual">189€</span><span class="precio-anterior">299€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 316 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega el miércoles, 10 de septiembre</div>
     		</div>
   		</div>
 
@@ -294,13 +303,23 @@
       			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
       			<div class="envio">📦 Envío gratis. Entrega mañana</div>
     		</div>
+
+			<div class="card">
+      			<span class="badge">-10%</span>
+      			<img src="img/Macbook/dorado.jpg" alt="MacBook Air">
+      			<div><span class="tag">Incluye regalo</span><span class="tag">Precio estudiante</span></div>
+      			<div class="nombre">Apple MacBook Air 13" Apple M5 16 GB 512GB SSD GPU 10 núcleos macOS Blanco Estrella + Regalo Belkin USB-C Multipuerto 6 en 1</div>
+      			<div><span class="precio-actual">1.379€</span><span class="precio-anterior">1.539€</span></div>
+      			<div class="valoracion">⭐ 4,8/5 · 165 opiniones</div>
+      			<div class="envio">📦 Envío gratis. Entrega mañana</div>
+    		</div>
 			
   		</div>
 		<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
 		<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
 
 		</section>
-		
+
 		<script>
   			function desplazar(boton, direccion) {
     			const carrusel = boton.closest('section').querySelector('.carrusel');
@@ -320,10 +339,57 @@
   			}
 
   			document.querySelectorAll('.carrusel').forEach(carrusel => {
-    			actualizarFlechas(carrusel); // estado inicial
+    			actualizarFlechas(carrusel);
     			carrusel.addEventListener('scroll', () => actualizarFlechas(carrusel));
   			});
 		</script>
+
+
+		<section class="carrusel-lateral carrusel-compacto">
+
+			<div class="carrusel">
+
+				<div class="card">
+				<img src="img/servicios/reaco.webp" alt="Reacondicionados">
+				<div class="pie">Reacondicionados</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/servicios.webp" alt="Servicios">
+					<div class="pie">Servicios</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/ordenadores pccom.webp" alt="Ordenadores">
+					<div class="pie">Ordenadores PcCom</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/envio gratis.webp" alt="Envio gratis">
+					<div class="pie">Envío gratuitos en pedidos superiores a 50€</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/24 horas.webp" alt="24 horas">
+					<div class="pie">Recibe tu pedido en 24h</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/dev gratuitas.webp" alt="Devoluciones">
+					<div class="pie">Devoluciones gratuitas</div>
+				</div>
+
+				<div class="card">
+					<img src="img/servicios/garantia.webp" alt="Garantía">
+					<div class="pie">Garantía de solución en 24h</div>
+				</div>
+
+			</div>
+
+			<button class="flecha flecha-izq" onclick="desplazar(this, -1)" aria-label="Ver producto anterior">‹</button>
+			<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
+
+		</section>
 		
 		<section class="compromisos" id="compromisos">
 			<h2>Los expertos en tecnología más comprometidos contigo</h2>

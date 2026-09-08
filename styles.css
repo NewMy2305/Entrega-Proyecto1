@@ -368,9 +368,9 @@ span {
     scroll-snap-type: x mandatory;
     gap: 20px;
     scroll-behavior: smooth;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none; 
   }
-  .carrusel::-webkit-scrollbar { display: none; } /* Chrome/Safari */
+  .carrusel::-webkit-scrollbar { display: none; }
 
   .card {
     position: relative;
@@ -398,6 +398,7 @@ span {
     height: 150px;
     object-fit: contain;
     margin-bottom: 10px;
+	mix-blend-mode: multiply;
   }
 
   .tag {
@@ -466,12 +467,35 @@ span {
 
 .flecha-izq {
   left: -10px;
-  display: none; /* oculta al inicio */
+  display: none; 
 }
 
 .flecha-der {
   right: -10px;
 }
+
+/* CARRUSEL SERVICIOS */
+
+.pie {
+    font-size: 0.85rem;
+    color: #222;
+	text-align: center;
+  }
+
+.carrusel-compacto .carrusel {
+	gap: 10px;
+}
+
+.carrusel-compacto .card {
+	padding: 6px;
+	flex: 0 0 200px;
+}
+
+.carrusel-compacto .card img {
+	display: block;
+	margin-bottom: 4px;
+}
+
 
 
 /* COMPROMISOS */
