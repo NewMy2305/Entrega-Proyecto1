@@ -496,6 +496,41 @@ span {
 	margin-bottom: 4px;
 }
 
+/* GALERIA */
+
+.galeria .card img {
+	height: 180px;
+}
+
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 24px
+}
+
+.etiqueta-recomendado {
+	display: inline-block;
+	background: #e67e22;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: bold;
+	padding: 4px 10px;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.precio-minimo {
+	color: #c00;
+	font-weight: bold;
+	font-size: 0.9rem;
+	margin-bottom: 6px;
+}
+
+.ver-otras:hover {
+	text-decoration: underline;
+}
+
+
 
 
 /* COMPROMISOS */

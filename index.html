@@ -320,31 +320,6 @@
 
 		</section>
 
-		<script>
-  			function desplazar(boton, direccion) {
-    			const carrusel = boton.closest('section').querySelector('.carrusel');
-    			carrusel.scrollBy({ left: 280 * direccion, behavior: 'smooth' });
-  			}
-
-  			function actualizarFlechas(carrusel) {
-    			const seccion = carrusel.closest('section');
-    			const flechaIzq = seccion.querySelector('.flecha-izq');
-    			const flechaDer = seccion.querySelector('.flecha-der');
-
-    			const alPrincipio = carrusel.scrollLeft <= 0;
-    			const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 1;
-
-    			flechaIzq.style.display = alPrincipio ? 'none' : 'flex';
-    			flechaDer.style.display = alFinal ? 'none' : 'flex';
-  			}
-
-  			document.querySelectorAll('.carrusel').forEach(carrusel => {
-    			actualizarFlechas(carrusel);
-    			carrusel.addEventListener('scroll', () => actualizarFlechas(carrusel));
-  			});
-		</script>
-
-
 		<section class="carrusel-lateral carrusel-compacto">
 
 			<div class="carrusel">
@@ -390,6 +365,149 @@
 			<button class="flecha flecha-der" onclick="desplazar(this, 1)" aria-label="Ver siguiente producto">›</button>
 
 		</section>
+
+
+		<section class="productos-galeria" aria-label="Descubre los productos más vendidos">
+			<div class="titulo">
+				<h2>Descubre los productos más vendidos</h2>
+			</div>
+
+			<div class="galeria">
+				<div class="card">
+					<span class="badge">-11%</span>
+					<img src="img/Galeria/ram.webp" alt="Kingston ram">
+					<span class="etiqueta-recomendado">Recomendado</span>
+					<div class="nombre">Kingston NV3 1TB Disco SSD 6000MB/S NVMe PCIe 4.0 M.2 Gen4 2280 3D Nand</div>
+					<div><span class="precio-actual">149,95€</span><span class="precio-anterior">169,95€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 1434 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-37%</span>
+					<img src="img/Galeria/monitor msi.webp" alt="MAG 272F">
+					<span class="etiqueta-recomendado">Recomendado</span>
+					<div class="nombre">Monitor MSI MAG 272F X24 27" FHD 240Hz Rapid IPS HDR Adaptive-Sync AI Vision Antirreflejo</div>
+					<div><span class="precio-actual">119€</span><span class="precio-anterior">189€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 3548 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-30%</span>
+					<img src="img/Galeria/monitor aoc.webp" alt="Q27G4XF">
+					<div class="nombre">AOC Q27G4XF 27" LED Fast IPS QHD 180Hz Regulable en Altura</div>
+					<div><span class="precio-actual">139€</span><span class="precio-anterior">199,90€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 6676 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-24%</span>
+					<img src="img/Galeria/monitor pccom.webp" alt="Elysium 27">
+					<div class="nombre">Monitor gaming PcCom Elysium 27" Fast IPS FHD 200Hz Adaptive Sync</div>
+					<div><span class="precio-actual">109,99€</span><span class="precio-anterior">144,99€</span></div>
+					<div class="valoracion">4,6/5 ⭐ 1816 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-33%</span>
+					<img src="img/Galeria/tempest combo.webp" alt="Tempest combo">
+					<div class="nombre">Tempest Combo 3100 PRO RGB Teclado + Ratón + Auriculares + Alfombrilla</div>
+					<div><span class="precio-actual">30€</span><span class="precio-anterior">44,99€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,5/5 ⭐ 5939 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-34%</span>
+					<img src="img/Galeria/monitor msi 200.webp" alt="Msi 200">
+					<div class="nombre">Monitor MSI MAG 274QF E20 27" WQHD 200Hz IPS Plano VESA DisplayHDR 400 Tiempo de Respuesta 0,5 ms</div>
+					<div><span class="precio-actual">149€</span><span class="precio-anterior">229€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,7/5 ⭐ 2211 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-41%</span>
+					<img src="img/Galeria/logitech.webp" alt="Logitech">
+					<div class="nombre">Logitech G305 LightSpeed Ratón Inalámbrico Gaming 12000DPI Negro</div>
+					<div><span class="precio-actual">34,99€</span><span class="precio-anterior">59,99€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 3415 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-38%</span>
+					<img src="img/Galeria/monitor aoc 200.webp" alt="AOC 200">
+					<div class="nombre">Monitor AOC 24G4HA 23.8" Fast IPS Full HD 200Hz 1ms HDR10 Altura Ajustable Adaptive Sync</div>
+					<div><span class="precio-actual">79,99€</span><span class="precio-anterior">129,90€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,7/5 ⭐ 53 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-37%</span>
+					<img src="img/Galeria/forgeon captain.webp" alt="Forgeon Captain">
+					<div class="nombre">Forgeon Captain RGB Auriculares con Micrófono Inalámbricos Gaming Negros</div>
+					<div><span class="precio-actual">49,99€</span><span class="precio-anterior">79,99€</span></div>
+					<div class="precio-minimo">¡Precio mínimo histórico!</div>
+					<div class="valoracion">4,5/5 ⭐ 1418 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-50%</span>
+					<img src="img/Galeria/corsair gaming.webp" alt="Corsair gaming">
+					<div class="nombre">Corsair Gaming Bundle Corsair K55 CORE RGB + Corsair Harpoon RGB Pro + Corsair MM100 + Corsair HS35 v2</div>
+					<div><span class="precio-actual">64,99€</span><span class="precio-anterior">129,99€</span></div>
+					<div class="valoracion">4,7/5 ⭐ 1418 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega el viernes, 11 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-25%</span>
+					<img src="img/Galeria/portatil alurion.webp" alt="Portatil Alurin">
+					<div class="nombre">Portátil Alurin Flex Advance AMD Ryzen 7-5825U 15.6"/ 16GB/500GB/Windows 11 Home</div>
+					<div><span class="precio-actual">489,99€</span><span class="precio-anterior">654,99€</span></div>
+					<div class="valoracion">4,3/5 ⭐ 272 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega a partir del lunes, 21 de septiembre</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+				<div class="card">
+					<span class="badge">-12%</span>
+					<img src="img/Galeria/macbook air.webp" alt="Macbook Air">
+					<div class="nombre">Apple MacBook Air 13" Apple M5 16GB 512GB SSD GPU 10 núcleos macOS Medianoche + Cargador 35W + Regalo Belkin USB-C Multipuerto 6 en 1</div>
+					<div><span class="precio-actual">1.399€</span><span class="precio-anterior">1.599€</span></div>
+					<div class="valoracion">4,8/5 ⭐ 179 opiniones</div>
+					<div class="envio">📦 Envío gratis. Entrega mañana</div>
+					<a href="#" class="ver-otras">Ver otras opciones</a>
+				</div>
+			</div>
+
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		<section class="compromisos" id="compromisos">
 			<h2>Los expertos en tecnología más comprometidos contigo</h2>
@@ -402,6 +520,30 @@
 		</section>
 
 	</main>
+
+	<script>
+  			function desplazar(boton, direccion) {
+    			const carrusel = boton.closest('section').querySelector('.carrusel');
+    			carrusel.scrollBy({ left: 280 * direccion, behavior: 'smooth' });
+  			}
+
+  			function actualizarFlechas(carrusel) {
+    			const seccion = carrusel.closest('section');
+    			const flechaIzq = seccion.querySelector('.flecha-izq');
+    			const flechaDer = seccion.querySelector('.flecha-der');
+
+    			const alPrincipio = carrusel.scrollLeft <= 0;
+    			const alFinal = carrusel.scrollLeft + carrusel.clientWidth >= carrusel.scrollWidth - 1;
+
+    			flechaIzq.style.display = alPrincipio ? 'none' : 'flex';
+    			flechaDer.style.display = alFinal ? 'none' : 'flex';
+  			}
+
+  			document.querySelectorAll('.carrusel').forEach(carrusel => {
+    			actualizarFlechas(carrusel);
+    			carrusel.addEventListener('scroll', () => actualizarFlechas(carrusel));
+  			});
+		</script>
 
 	
 	<footer class="site-footer">
