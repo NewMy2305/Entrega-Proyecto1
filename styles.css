@@ -558,7 +558,7 @@ span {
 }
 
 .ver-guias:hover {
-	background: #ccc;
+	background: #eceeef;
 }
 
 .guias-grid {
@@ -569,7 +569,7 @@ span {
 
 .guias {
 	display: block;
-	background: #ccc;
+	background: #eceeef;
 	border-radius: 12px;
 	overflow: hidden;
 	padding: 16px;
@@ -577,9 +577,15 @@ span {
 
 .guias img {
 	width: 100%;
-	height: 320px;
+	height: 290px;
 	object-fit: cover;
 	display: block;
+	border-radius: 12px;
+	transition: transform 0.4s;
+}
+
+.guias:hover img {
+	transform: scale(1.02);
 }
 
 .PieGuia {
