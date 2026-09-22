@@ -641,22 +641,97 @@ span {
 }
 
 .btn-oscuro{
-	background: #1a1a1a;
+	background: #444;
 	color: white;
 	padding: 14px 24px;
-	border-radius: 5px;
+	border-radius: 4px;
 	font-weight: 600;
 	text-decoration: none;
 }
 
+.btn-oscuro:hover{
+	background: #1a1a1a;
+}
+
+.btn-outline {
+	background: white;
+	color: #1a1a1a;
+	border: 2px solid #ccc;
+	padding: 14px 24px;
+	border-radius: 4px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.btn-outline:hover{
+	background: #eee;
+	border-color: #999;
+}
 
 
+.reaco-ventajas {
+	background: white;
+	border-radius: 10px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	justify-content: center;
+}
 
+.ventaja-item {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-weight: 700;
+}
 
+.ventaja-icono {
+	background: #e8e6fb;
+	color: #5b3df5;
+	width: 40px;
+	height: 40px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
 
+.reaco-buscados {
+	grid-column: 1 / -1;
+}
 
+.reaco-buscados h3 {
+	margin-bottom: 20px;
+	font-size: 22px;
+}
 
+.pill {
+	background: white;
+	border: 1px solid #5b3df5;
+	color: #1a1a1a;
+	padding: 10px 20px;
+	border-radius: 999px;
+	font-weight: 600;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.9rem;
+	transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
 
+.pill:hover {
+	background: #f0eefe;
+	transform: translateY(-4px);
+	box-shadow: 0 10px 20px -8px rgba(91, 61, 245, 0.5);
+}
+
+.pill-mas {
+	border-color: #ccc;
+	color: #5b3df5;
+}
 
 
 
