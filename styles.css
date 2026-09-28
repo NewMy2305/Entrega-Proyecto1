@@ -614,6 +614,7 @@ span {
 	display: grid;
 	grid-template-columns: 1.3fr 1fr;
 	gap: 30px;
+	margin-bottom: 40px;
 }
 
 
@@ -733,11 +734,71 @@ span {
 	color: #5b3df5;
 }
 
+/* SECCION NOVEDADES */
 
 
+.Baner-novedades{
+	background: #eceeef;
+	border-radius: 20px;
+	padding: 24px;
+	border: 1px solid #ccc;
+	
+}
 
+.grid-novedades{
+	display: grid;
+	grid-template-columns: 1.6fr 1fr 1.6fr 1fr;
+	padding: 15px;
+	gap: 20px;
+}
 
+.novedades img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	display: block;
+	border-radius: 12px;
+	transition: transform 0.4s;
+}
 
+.novedades:hover img {
+	transform: scale(1.02);
+}
+
+.novedades{
+	background: white;
+	padding: 13px;
+	border-radius: 20px;
+}
+
+.PieNovedades {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 16px;
+	padding: 16px 20px;
+	font-weight: bold;
+	font-size: 1.05rem;
+}
+
+/* BANER MARCAS */
+
+.card-marcas{
+    position: relative;
+    flex: 0 0 260px;
+    scroll-snap-align: start;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .card-marcas img {
+    width: 100%;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+	mix-blend-mode: multiply;
+  }
 
 
 /* COMPROMISOS */
