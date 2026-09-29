@@ -106,8 +106,8 @@ span {
 
 
 .site-header {
-	background: var(--color-primary);
-	color: var(--color-white);
+	background: var(--color-white);
+	color: var(--color-text-light);
 	position: sticky;
 	top: 0;
 	z-index: 10;
@@ -800,6 +800,38 @@ span {
 	mix-blend-mode: multiply;
   }
 
+
+/* ARTICLE PIE PAGINA */
+
+.Pie-pagina{
+	text-align: left;
+	padding: 20px;
+}
+
+.Pie-pagina p{
+	font-family: var(--font-body);
+	font-size: 14px;
+}
+
+.Pie-pagina h2{
+	font-family: var(--font-body);
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.lista-pie{
+	list-style: disc;
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: var(--spacing-md) 0;
+}
+
+.lista-pie li{
+	font-family: var(--font-body);
+	font-size: 14px;
+}
 
 /* COMPROMISOS */
 
