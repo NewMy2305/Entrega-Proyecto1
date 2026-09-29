@@ -833,6 +833,59 @@ span {
 	font-size: 14px;
 }
 
+/* PIE SERVICIOS */
+
+.pie-servicios{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	border-radius: 1px;
+	background: #eceeef;
+	padding: 40px;
+	gap: 20px;
+}
+
+.card-pie{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	
+}
+
+.card-pie a{
+	font-family: var(--font-body);
+	font-size: 14px;
+}
+
+.card-pie a:hover{
+	text-decoration: underline;
+}
+
+.car-pie img{
+	width: 100%;
+	height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* COMPROMISOS */
 
 
