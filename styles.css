@@ -68,7 +68,7 @@ ul {
 	list-style: none;
 }
 
-/* TEXTO */
+/* TITULOS Y TEXTO */
 
 
 h1, h2, h3 {
@@ -131,8 +131,8 @@ span {
 }
 
 .logo img {
-    height: 47px;      /* controla el tamaño por altura, no por width */
-    width: auto;        /* mantiene la proporción */
+    height: 47px;     
+    width: auto;        
     display: block;
 }
 
@@ -188,7 +188,7 @@ span {
 }
 
 .header-actions {
-  margin-left: auto;     /* empuja "Mi cuenta" y "Mi cesta" a la derecha */
+  margin-left: auto;   
 }
 
 .header-actions ul {
@@ -200,7 +200,7 @@ span {
 	display: flex;
 	align-items: center;
 	gap: 8px;
-	color: #1a1a1a;
+	color: var(--color-text);
 	font-weight: 600;
 	font-size: var(--fs-small);
 	border-radius: 6px;
@@ -225,7 +225,7 @@ span {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	border-radius: 2px;
-	padding:15px;
+	padding: 15px;
 }
 
 
@@ -237,7 +237,7 @@ span {
 
 .main-nav a {
 	display: inline-block;
-	color: #333;
+	color: var(--color-text);
 	font-weight: 600;
 	border: 1px solid transparent;
 	font-size: var(--fs-small);
@@ -253,7 +253,7 @@ span {
 }
 
 .main-nav a.destacado{
-	color: #ff6000;
+	color: var(--color-primary);
 	font-weight: 700;
 }
 
@@ -420,7 +420,7 @@ span {
 
 .carrusel-lateral {
     position: relative;
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: 20px;
   }
@@ -1016,6 +1016,7 @@ span {
 /* MEDIAQUERYS */
 
 /* Tablet: a partir de 375px */
+
 @media (min-width: 375px) {
 	:root {
 		--fs-h1: 2.2rem;
@@ -1027,6 +1028,7 @@ span {
 }
 
 /* Tablet grande: a partir de 600px */
+
 @media (min-width: 600px) {
 	.producto-destacado,
 	.banner-reacondicionados {
@@ -1055,6 +1057,7 @@ span {
 }
 
 /* Escritorio: a partir de 768px */
+
 @media (min-width: 768px) {
 	:root {
 		--fs-h1: 2.5rem;
@@ -1089,8 +1092,20 @@ span {
 }
 
 /* Escritorio grande: a partir de 1024px */
+
 @media (min-width: 1024px) {
-	.grid-productos {
-		grid-template-columns: repeat(4, 1fr);
+	.categorias{
+		max-width: none;
 	}
+
+	.carrusel-lateral{
+		max-width: none;
+	}
+	.producto-destacado{
+		max-width: none;
+	}
+	.banner-reacondicionados{
+		max-width: none;
+	}
+
 }
